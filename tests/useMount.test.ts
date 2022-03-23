@@ -9,7 +9,13 @@ afterEach(() => {
 
 it('should call provided callback on mount', () => {
   renderHook(() => useMount(mockCallback));
-
+  // const { result, unmount, rerender } = renderHook(() => useMount(mockCallback));
+  // const { all, current } = result;
+  // console.log(result);
+  // console.log(all);
+  // console.log(current);
+  // console.log(unmount);
+  // console.log(rerender);
   expect(mockCallback).toHaveBeenCalledTimes(1);
 });
 

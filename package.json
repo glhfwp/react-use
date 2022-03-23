@@ -12,6 +12,7 @@
   "types": "lib/index.d.ts",
   "typings": "lib/index.d.ts",
   "scripts": {
+    "mytest": "npm run test:watch",
     "start": "yarn storybook",
     "test": "jest --maxWorkers 2",
     "test:ssr": "jest --maxWorkers 2 --config ./jest.config.node.ts",
